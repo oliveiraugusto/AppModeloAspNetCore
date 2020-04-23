@@ -18,13 +18,13 @@ namespace AppModelo.Pages
             if (resultado == true)
             {
                 Debug.WriteLine("CONEXAO REALIZADA COM SUCESSO");
+                ViewData["conexao"] = "Conexao realizada com Sucesso!";
             }
             else
             {
                 Debug.WriteLine("HOUVE UM ERRO AO RELIZAR A CONEXAO COM O BANCO DE DADOS");
+                ViewData["conexao"] = "Houve um ERRO na conexao com o Banco de Dados!";
             }
-
-            ViewData["nome"] = nome;
         }
     }
 }

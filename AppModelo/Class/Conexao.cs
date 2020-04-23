@@ -27,9 +27,10 @@ namespace AppModelo.Class
                     return false;
 
             }
-            catch (Exception ex)
+            catch /*(Exception ex)*/
             {
-                throw new Exception("Não foi possivel conectar ao banco de dados "+ex.Message);
+                //throw new Exception("Não foi possivel conectar ao banco de dados "+ex.Message);
+                return false;
             }
             finally
             {
